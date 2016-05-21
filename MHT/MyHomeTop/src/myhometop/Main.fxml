@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="1136.0" style="-fx-background-color: #191919; -fx-text-fill: #18CAE6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myhometop.MainController">
+   <children>
+      <Pane layoutX="1.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="1136.0" style="-fx-background-color: #141414;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <Label layoutX="34.0" layoutY="23.0" text="DASHBOARD - SERVIDOR" textFill="#18cae6">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView id="tabelaSensor" fx:id="tabelaSensor" layoutX="31.0" layoutY="129.0" prefHeight="200.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="nomeSensor" prefWidth="123.0" text="Nome" />
+          <TableColumn fx:id="descricaoSensor" prefWidth="120.0" text="Descricao" />
+            <TableColumn fx:id="tipoSensor" prefWidth="118.0" text="Tipo" />
+            <TableColumn fx:id="localSensor" prefWidth="144.0" text="Local" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="99.0" text="Sensores" textFill="#18cae6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="585.0" layoutY="99.0" text="Atuadores" textFill="#18cae6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView id="tabelaAtuador" fx:id="tabelaAtuador" layoutX="585.0" layoutY="129.0" prefHeight="200.0" prefWidth="519.0">
+         <columns>
+            <TableColumn fx:id="nomeAtuador" prefWidth="123.0" text="Nome" />
+            <TableColumn fx:id="descricaoAtuador" prefWidth="120.0" text="Descricao" />
+            <TableColumn fx:id="tipoAtuador" prefWidth="118.0" text="Tipo" />
+            <TableColumn fx:id="localAtuador" prefWidth="144.0" text="Local" />
+         </columns>
+      </TableView>
+      <TextField fx:id="novoSensorNome" layoutX="28.0" layoutY="428.0" promptText="Nome" />
+      <Label layoutX="29.0" layoutY="368.0" text="Adicionar Sensor e Atuador" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="400.0" text="Sensor:" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="novoSensorDescricao" layoutX="189.0" layoutY="428.0" promptText="Descricao" />
+      <TextField fx:id="novoSensorTipo" layoutX="350.0" layoutY="428.0" promptText="Tipo" />
+      <TextField fx:id="novoSensorLocal" layoutX="511.0" layoutY="428.0" promptText="Local" />
+      <TextField fx:id="novoAtuadorLocal" layoutX="511.0" layoutY="491.0" promptText="Local" />
+      <TextField fx:id="novoAtuadorTipo" layoutX="350.0" layoutY="491.0" promptText="Tipo" />
+      <TextField fx:id="novoAtuadorDescricao" layoutX="189.0" layoutY="491.0" promptText="Descricao" />
+      <Label layoutX="28.0" layoutY="463.0" text="Atuador:" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="novoAtuadorNome" layoutX="28.0" layoutY="491.0" promptText="Nome" />
+      <Button fx:id="adicionarSA" layoutX="579.0" layoutY="541.0" mnemonicParsing="false" onAction="#adicionarSA" style="-fx-background-color: #191919; -fx-border-color: #18CAE6;" text="Adicionar" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="720.0" layoutY="400.0" text="Alterar estado Atuador:" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="estadoAtuador" layoutX="720.0" layoutY="428.0" promptText="Estado Atuador" />
+      <Button fx:id="alterarAtuador" layoutX="805.0" layoutY="475.0" mnemonicParsing="false" onAction="#alterarAtuador" style="-fx-background-color: #191919; -fx-border-color: #18CAE6;" text="Alterar" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

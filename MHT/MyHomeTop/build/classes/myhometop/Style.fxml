@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="506.0" style="-fx-background-color: #191919;" fx:controller="myhometop.LoginController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="nome" fx:id="nome" layoutX="165.0" layoutY="159.0" prefHeight="27.0" prefWidth="177.0" promptText="Nome" style="-fx-background-color: #191919; -fx-border-color: #18CAE6; -fx-text-fill: #18CAE6;" AnchorPane.topAnchor="159.0">
+        
+        
+        
+      </TextField>        
+     
+      <TextField id="senha" fx:id="senha" layoutX="165.0" layoutY="200.0" prefHeight="27.0" prefWidth="177.0" promptText="Senha" style="-fx-background-color: #191919; -fx-border-color: #18CAE6; -fx-text-fill: #18CAE6;" styleClass="inputTron">
+
+      </TextField>
+      
+      <Button fx:id="btnLogin" layoutX="218.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnLoginAction" style="-fx-background-color: #191919; -fx-border-color: #18CAE6;" text="ENVIAR" textFill="#18cae6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="189.0" layoutY="60.0" text="MHT" textFill="#18cae6">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="339.0" prefHeight="17.0" prefWidth="177.0" textAlignment="CENTER" textFill="#dd0909" />
+   </children>
+</AnchorPane>
